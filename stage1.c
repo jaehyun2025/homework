@@ -5,7 +5,6 @@
 #define NUM_CANDIDATES 6
 #define NUM_FIELDS 5
 
-// 후보자 이름과 ID
 char *candidate_names[NUM_CANDIDATES] = {
     "박지연", "Ethan Smith", "Helena Silva",
     "Liam Wilson", "김민준", "Sophie Lee"
@@ -31,7 +30,6 @@ int get_valid_score(const char *field) {
     return score;
 }
 
-// 한 후보자 점수 입력
 void input_scores(int field_index) {
     for (int i = 0; i < NUM_CANDIDATES; i++) {
         printf("후보자: %s\n", candidate_names[i]);
